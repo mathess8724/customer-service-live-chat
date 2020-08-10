@@ -1,0 +1,27 @@
+{
+  "requests" : {
+    "chat-1596765468879" : [ {
+      "messages" : [ {
+        "msg" : "Hello, I am Mathew, how can I help you?",
+        "name" : "Mathew",
+        "pseudo" : "agent",
+        "seen" : false
+      } ]
+    }, {
+      "isChat" : true
+    }, {
+      "agentSeen" : false
+    }, {
+      "clientSeen" : false
+    }, {
+      "agentWrite" : false
+    }, {
+      "clientWrite" : false
+    }, {
+      "solved" : false
+    }, {
+      "seen" : true
+    } ]
+  },
+  "serviceIsOn" : true
+}

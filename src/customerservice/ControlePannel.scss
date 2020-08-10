@@ -1,0 +1,254 @@
+.controlsBody
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serviceButton
+{
+    background-color: rgb(240, 20, 20);
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    width: 150px;
+}
+.serviceButton:hover{
+    cursor: pointer;
+}
+.serviceButtonOn
+{
+    background-color: rgb(115, 238, 15);
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    width: 150px;
+}
+.serviceButtonOn:hover{
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+}
+.clientsContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.clientCard
+{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.idChatContainer
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    height: 40px;
+    width: 250px;
+    background-color: rgb(16, 137, 236);
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(102, 102, 102);
+}
+.imgChat
+{
+    position: absolute;
+    top:-25px;
+    left: -30px;
+    height: 80px;
+    width: 80px;
+    background-color: red;
+    border-radius: 50%;
+}
+.imgChatSolved
+{
+    background-color: rgb(235, 33, 33);
+}
+.imgChatWaiting
+{
+    background-color: rgb(70, 219, 33);
+    animation: waiting 2s linear infinite;
+}
+@keyframes waiting{
+
+    0%
+    {
+        background-color: rgb(65, 187, 34);
+    }
+    50%
+    {
+        background-color: rgb(244, 248, 11);
+    }
+    100%
+    {
+        background-color: rgb(65, 187, 34);
+    }
+
+}
+.imgChatTalking
+{
+    background-color: rgb(48, 207, 27);
+    
+}
+.imgAgent
+{
+    height: 80px;
+    width: 80px;
+}
+.id
+{
+    margin-left: 65px;
+    
+}
+.cardBody
+{
+    padding-top: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: green;
+    transition: 1s;
+    //opacity: 0;
+    animation: cardBody 1s linear;
+    background-color: rgb(218, 218, 213);
+}
+@keyframes cardBody
+{
+
+    0%
+    {
+        overflow: hidden;
+        opacity: 0;
+    }
+    100%
+    {
+        overflow: hidden;
+        opacity:1;
+    }
+}
+.cardBodyOff
+{
+    height: 0px;
+    opacity: 0;
+    animation: cardBodyOff 1s linear;
+    overflow: hidden;
+   
+}
+@keyframes cardBodyOff
+{
+
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity:0;
+    }
+}
+.agentMsg
+{
+    width: 180px;
+    background-color: rgb(198, 218, 198);
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-left: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.clientMsg
+{
+    width: 180px;
+    background-color: rgb(33, 62, 226);
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.clientMsgContainer
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.agentMsgContainer
+{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.messagesContainer
+{
+    background-color: rgb(218, 218, 213);
+    height: 230px;
+    overflow-y: scroll;
+}
+.footerContainer
+{
+    bottom: 0;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    background-color: rgb(218, 218, 213);
+    border-top: 1px solid rgb(129, 129, 129);
+}
+.msgInput
+{
+    width: 180px;
+    height:100px;
+}
+.sendMsg
+{
+    border: none;
+    height: 100px;
+    width: 50px;
+    margin-left: 5px;
+}
+.menuContainer
+{
+    position: absolute;
+    top:-30px;
+    left: 50px;
+    //background-color: blue;
+    width: 70%;
+    height: 25px;
+    border-radius: 3px;
+    display: flex;
+    transition: 1s;
+    animation: cardBody 1s linear;
+}
+.menuContainerOff
+{
+    display: none;
+    transition: 1s;
+    animation: cardBody 1s linear;
+
+
+}
+.solveButton
+{
+    width: 85px;
+    height: 25px;
+    background-color: rgba(6, 6, 247, 0.281);
+    border-radius: 3px;
+}
+.solveButton:hover
+{
+    cursor: pointer;
+    background-color: rgba(6, 6, 247, 0.582);
+
+}
